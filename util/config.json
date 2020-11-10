@@ -1,0 +1,6 @@
+{
+  "token": "",
+  "prefix": "^",
+  "mongoPath": "mongodb+srv://bot:bot@bot.fhyaz.mongodb.net/bot?retryWrites=true&w=majority",
+"redisPath": "//redis-19084.c246.us-east-1-4.ec2.cloud.redislabs.com:19084?password=iUUzOuOng4yfjuYZc7Jw95PIi98xFaLy"
+}

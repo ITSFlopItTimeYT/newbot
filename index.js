@@ -12,18 +12,18 @@ const path = require('path')
 const fs = require('fs')
 const Discord = require('discord.js')
 const client = new Discord.Client()
-const antiAd = require('./anti-ad')
+const antiAd = require('@features/anti-ad')
 
-const config = require('./config.json')
+const config = require('@util/config.json')
 
 client.on('ready', async () => {
   console.log('The client is ready!')
 
   const baseFile = 'command-base.js'
-  const commandBase = require(`./commands/${baseFile}`)
-  const loadCommands = require('./commands/load-commands')
-  const modLogs = require('./mod-logs')
-  const loadLanguages = require('./language.js')
+  const commandBase = require(`@root/commands/${baseFile}`)
+  const loadCommands = require('@root/commands/load-commands')
+  //const modLogs = require('./mod-logs')
+  //const loadLanguages = require('./language.js')
   const readCommands = (dir) => {
     const files = fs.readdirSync(path.join(__dirname, dir))
     for (const file of files) {
